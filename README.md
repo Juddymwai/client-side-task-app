@@ -1,8 +1,10 @@
 # TASK TRACKER
  ## Judy Mwai
 ## Screenshot
- <!-- ![image](./public/) -->
- <img src="/client/public/landing.png" />
+ <!-- ![image](./public/home1.png) -->
+ <img src="/public/landing.png" />
+ <img src="/public/home1.png" />
+
  
  ## Table of Content
  - [Description](#description)
