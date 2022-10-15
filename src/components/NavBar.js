@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function NavBar({user, setUser}){
     function handleLogout(){
-        fetch('/logout',{method: "DELETE"})
+        fetch('https://jay-task-tracker.herokuapp.com/logout',{method: "DELETE"})
         .then((resp)=> {
             if (resp.ok){
                 setUser(null);

@@ -11,7 +11,7 @@ function App(){
   const [user, setUser] = useState(null);
 
   useEffect(() =>{
-    fetch('/me').then((resp) =>{
+    fetch('https://jay-task-tracker.herokuapp.com/me').then((resp) =>{
       if (resp.ok){
         resp.json().then ((user)=> setUser(user));
       }

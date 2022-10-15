@@ -22,7 +22,7 @@ function NewTask({onHandleAddPost, handleClose}){
             "title":title,
             "duration": duration
         }
-        fetch("/tasks", {
+        fetch("https://jay-task-tracker.herokuapp.com/tasks", {
             method: "POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify(newObj)

@@ -12,7 +12,7 @@ function Home({user, id}){
 
 
     useEffect(()=>{
-        fetch(`/users/${id}`)
+        fetch(`https://jay-task-tracker.herokuapp.com/users/${id}`)
      
         .then((r)=> r.json())
         .then((data)=> setTask(data))

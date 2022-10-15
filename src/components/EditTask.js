@@ -8,7 +8,7 @@ function EditTask({ id, onUpdatedTask, handleOff}){
         e.preventDefault()
      
 
-       fetch(`/tasks/${id}`, {
+       fetch(`https://jay-task-tracker.herokuapp.com/tasks/${id}`, {
            method: "PATCH",
            headers: {"Content-Type":"application/json"},
            body: JSON.stringify({

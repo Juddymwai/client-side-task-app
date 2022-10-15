@@ -5,7 +5,7 @@ function Login({setUser}){
     const [password, setPassword] = useState("");
     function handleSubmit(e){
         e.preventDefault();
-        fetch('/login',{
+        fetch('https://jay-task-tracker.herokuapp.com/login',{
         method: "POST", 
         headers: {"Content-Type":"application/json"
 

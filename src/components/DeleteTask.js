@@ -4,7 +4,7 @@ function DeleteTask({onDeletePost, id, onUpdatedBody, currentUser}){
     const [open, setOpen] = useState(false)
 
     function handleDeleteClick(){
-        fetch (`/tasks/${id}`, {
+        fetch (`https://jay-task-tracker.herokuapp.com/tasks/${id}`, {
             method: "DELETE",
             headers:{"Content-Type": "application/json"}
         
